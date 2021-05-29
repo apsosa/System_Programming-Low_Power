@@ -1,27 +1,18 @@
 ### System Programming Low Power
 
 Para este trabajo se utilizará como entorno de pruebas el programa
-Bochs . El mismo permite simular
-una computadora IBM-PC compatible desde el inicio, y realizar tareas de debugging. Todo el código
-provisto para la realización del presente trabajo está ideado para correr en
-Bochs
-de forma sencilla.
+Bochs . El mismo permite simular una computadora IBM-PC compatible desde el inicio, y realizar tareas de debugging. Todo el código
+provisto para la realización del presente trabajo está ideado para correr en Bochs de forma sencilla.
 Una computadora al iniciar comienza con la ejecución del POST y el BIOS, el cual se encarga
-Floppy Disk como
-boot-sector . El BIOS
-se encarga de copiar a memoria 512 bytes del sector, a partir de la dirección 0x7C00 . Luego, se
+Floppy Disk como boot-sector. 
+El BIOS se encarga de copiar a memoria 512 bytes del sector, a partir de la dirección 0x7C00 . Luego, se
 comienza a ejecutar el código a partir esta dirección. El boot-sector debe encontrar en el floppy el
 archivo KERNEL.BIN y copiarlo a memoria. Éste se copia a partir de la dirección 0x1200 , y luego se
 de reconocer el primer dispositivo de booteo. En este caso dispondremos de un
-dispositivo de booteo. En el primer sector de dicho
-floppy ,
-se almacena el
-ejecuta a partir de esa misma dirección. En la figura 2 se presenta el mapa de organización de la
-memoria utilizada por el
-kernel .
-Es importante tener en cuenta que el código del boot-sector se encarga exclusivamente de copiar
-kernel y dar el control al mismo, es decir, no cambia el modo del procesador. El código del boot-
-sector , como así todo el esquema de trabajo para armar el kernel y correr tareas, es provisto por la
+dispositivo de booteo. En el primer sector de dicho floppy, se almacena el ejecuta a partir de esa misma dirección. 
+En la figura 2 se presenta el mapa de organización de la memoria utilizada por el kernel. Es importante tener en cuenta 
+que el código del boot-sector se encarga exclusivamente de copiar kernel y dar el control al mismo, es decir,
+no cambia el modo del procesador. El código del boot-sector , como así todo el esquema de trabajo para armar el kernel y correr tareas, es provisto por la
 el cátedra.
   <!--
 Los archivos a utilizar como punto de partida para este trabajo práctico son los siguientes:
