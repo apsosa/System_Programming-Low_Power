@@ -23,6 +23,7 @@ Es importante tener en cuenta que el código del boot-sector se encarga exclusiv
 kernel y dar el control al mismo, es decir, no cambia el modo del procesador. El código del boot-
 sector , como así todo el esquema de trabajo para armar el kernel y correr tareas, es provisto por la
 el cátedra.
+  <!--
 Los archivos a utilizar como punto de partida para este trabajo práctico son los siguientes:
 − Makefile - encargado de compilar y generar el oppy disk.
 - bochsrc y bochsdbg - configuración para inicializar Bochs.
@@ -47,3 +48,4 @@ Los archivos a utilizar como punto de partida para este trabajo práctico son lo
 - taskMorty.c - código de las tareas del jugador Morty.
 - i386.h - funciones auxiliares para utilizar assembly desde C.
 - pic.c y pic.h - funciones pic_enable , pic_disable , pic_finish1 y pic_reset .
+--!>
