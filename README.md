@@ -1,6 +1,6 @@
 ### System Programming Low Power
 <p>
-Para este trabajo se utilizará como entorno de pruebas el programa
+Para este trabajo se utilizo como entorno de pruebas el programa
 Bochs . El mismo permite simular una computadora IBM-PC compatible desde el inicio, y realizar tareas de debugging. Todo el código
 provisto para la realización del presente trabajo está ideado para correr en Bochs de forma sencilla.
 Una computadora al iniciar comienza con la ejecución del POST y el BIOS, el cual se encarga
@@ -12,8 +12,7 @@ de reconocer el primer dispositivo de booteo. En este caso dispondremos de un
 dispositivo de booteo. En el primer sector de dicho floppy, se almacena el ejecuta a partir de esa misma dirección. 
 En la figura 2 se presenta el mapa de organización de la memoria utilizada por el kernel. Es importante tener en cuenta 
 que el código del boot-sector se encarga exclusivamente de copiar kernel y dar el control al mismo, es decir,
-no cambia el modo del procesador. El código del boot-sector , como así todo el esquema de trabajo para armar el kernel y correr tareas, es provisto por la
-el cátedra.
+no cambia el modo del procesador.
 <\p>
     
     
